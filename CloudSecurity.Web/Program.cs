@@ -19,6 +19,7 @@ namespace CloudSecurity.Web
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseUrls("http://0.0.0.0:5106")
                 .UseStartup<Startup>()
                 .Build();
     }
