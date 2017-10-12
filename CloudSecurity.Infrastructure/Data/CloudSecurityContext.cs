@@ -9,7 +9,7 @@ namespace CloudSecurity.Infrastructure.Data
     class CloudSecurityContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<ConfigurationOfUserSignature> ConfigurationOfUserSignatures { get; set; }
+        public DbSet<UserConfiguration> ConfigurationOfUserSignatures { get; set; }
         public DbSet<UserSignature> UserSignatures { get; set; }
 
         //TODO сделать подключение из файла вынести из кода вне c#

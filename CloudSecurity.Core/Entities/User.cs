@@ -23,7 +23,7 @@ namespace CloudSecurity.Core.Entities
         public string Email { get; set; }
 
         public int ConfigurationOfUserSignatureId { get; set; }
-        public ConfigurationOfUserSignature ConfigurationOfUserSignature { get; set; }
+        public UserConfiguration ConfigurationOfUserSignature { get; set; }
 
         public List<UserSignature> UserSignatures { get; set; }
         

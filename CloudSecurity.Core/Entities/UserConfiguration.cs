@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CloudSecurity.Core.Entities
 {
-    public class ConfigurationOfUserSignature: FileModel
+    public class UserConfiguration: FileModel
     {
         public int UserId { get; set; }
         public User User { get; set; }
