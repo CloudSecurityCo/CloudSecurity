@@ -22,8 +22,8 @@ namespace CloudSecurity.Core.Entities
         [StringLength(60)]
         public string Email { get; set; }
 
-        public int ConfigurationOfUserSignatureId { get; set; }
-        public UserConfiguration ConfigurationOfUserSignature { get; set; }
+        public int UserConfigurationId { get; set; }
+        public UserConfiguration UserConfiguration { get; set; }
 
         public List<UserSignature> UserSignatures { get; set; }
         

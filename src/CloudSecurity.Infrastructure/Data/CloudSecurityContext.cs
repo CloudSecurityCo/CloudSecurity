@@ -9,7 +9,7 @@ namespace CloudSecurity.Infrastructure.Data
     class CloudSecurityContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-        public DbSet<UserConfiguration> ConfigurationOfUserSignatures { get; set; }
+        public DbSet<UserConfiguration> UserConfiguration { get; set; }
         public DbSet<UserSignature> UserSignatures { get; set; }
 
         //TODO сделать подключение из файла вынести из кода вне c#
@@ -24,7 +24,8 @@ namespace CloudSecurity.Infrastructure.Data
         {
             //использование Fluent API
             modelBuilder.Entity<User>().HasAlternateKey(u => u.Email);
-            
+            modelBuilder.Entity<UserSignature>();
+            modelBuilder.Entity<UserConfiguration>();
 
         }
     }
